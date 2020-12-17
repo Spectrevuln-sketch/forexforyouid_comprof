@@ -1,0 +1,90 @@
+<%- include('layout/auth_header.ejs') %>
+
+  <%- include('layout/auth_topbar.ejs') %>
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+        <source src="images/Top_leader.mp4" type="video/mp4" />
+      </video>
+      <div class="header-text">
+        <div class="caption">
+
+          <div class="main-button">
+            <div class="scroll-to-section tn"><a class="btn btn-success" style="margin-left: -200px; margin-top: 400px;"
+                href="https://account.forex4uid.com/id/user-registration/">Buat
+                Akun</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Main Banner Area End ***** -->
+    <!-- All Leader -->
+    <section class="section all-akun">
+      <div class="container">
+        <div class="row">
+          <% DataLeader.forEach(leaders=> { %>
+            <div class="col-md-4">
+              <div class="all-akun-card">
+                <div class="card border-success mb-3" style="max-width: 50 rem;">
+                  <div class="card-header">
+                    <div class="row">
+                      <div class="col">
+                        <img class="img img-circle rounded-circle" src="<%= 'images/akun/' + leaders.image %> " alt="">
+                      </div>
+                      <div class="col">
+                        <h6 class="text-success font-weight-bold">
+                          <%= leaders.name %>
+                        </h6>
+                        <a href="#" class="btn btn-lg btn-success text-light d-block mt-2"><small>Copy</small></a>
+                      </div>
+                      <div class="row" style="margin-left: 10px; margin-top: 10px;">
+                        <div class="col">
+                          <h6 class="text-muted font-weight-bold" style="font-size: small;">
+                            #<%= leaders.nickname %>
+                          </h6>
+                        </div>
+                        <div class="col">
+                          <h6 class="text-success font-weight-bold" style="font-size: 20px;">
+                            <%= leaders.gain %>
+                          </h6>
+                          <small style="font-size: x-small;" class="text-muted font-weight-light">GAIN (1 YEAR)</small>
+                        </div>
+                        <div class="col">
+                          <h6 class="text-dark font-weight-light">
+                            <%= leaders.last_day %>
+                          </h6>
+                          <small style="font-size: x-small;" class="text-muted font-weight-light">LAST TRADING
+                            DAY</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <% }) %>
+
+        </div>
+      </div>
+    </section>
+    <!-- End All Leader -->
+
+
+
+
+    <!-- Google Maps -->
+    <section class="section contact" data-section="section6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Let’s Keep In Touch</h2>
+            </div>
+          </div>
+          <% include ('layout/google_map.ejs') %>
+        </div>
+      </div>
+
+
+      <%- include('layout/auth_footer.ejs') %>

@@ -1,0 +1,223 @@
+<%- include('layout/auth_header.ejs') %>
+
+  <%- include('layout/auth_topbar.ejs') %>
+
+    <section class="section main-banner" id="top" data-section="section1">
+      <div class="img-banner">
+        <img src="images/bg-polos.jpg" alt="#kalender-ekonomi">
+      </div>
+
+      <div class="banner-overlay header-text banner-copy">
+        <div class="caption2">
+          <div class="row">
+            <div class="col-md-6">
+              <small class="text-uppercase text-muted pl-4 text-left" style="font-weight: 800;">MEMBANDINGKAN
+                AKUN</small>
+              <h2 class="mt-2 text-left" style="font-size: 50px;">Rincian perbandingan akun</h2>
+              <h4 class="mt-5 text-left">Pilih antara akun Cent, Classic atau Pro untuk trading dengan eksekusi pasar
+                atau
+                eksekusi instan. Anda dapat memilih spread tetap dan mengambang untuk lot cents dan standar.</h4>
+              <p>Jika Anda memerlukan bantuan untuk memahami syarat-syaratnya
+                hubungi kami melalui <a
+                  href="https://support.eglobal-group.com/visitor/index.php?/LiveChat/Chat/Request/_sessionID=/_promptType=chat/_proactive=0/_languageID=1/_email=/_filterDepartmentID=107&_ga=2.197939183.1148826968.1607767871-478490345.1607146883">Live
+                  Chat</a> atau <a href="#">telepon melalui halaman situs.</a>
+              <p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!--  -->
+
+
+
+
+
+
+    <section class="section layanan">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="content-ly-trad">
+              <img src="images/layanan/justice-scale.png" alt="">
+              <h6 class=" card-text">Leverage hingga 1:2000.</h6>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="content-ly-trad">
+              <img src="images/layanan/arrows.png" alt="">
+              <h6 class=" card-text">Spread ketat</h6>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="content-ly-trad">
+              <img src="images/layanan/file.png" alt="">
+              <h6 class=" card-text">Layanan Copy Trade</h6>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="content-ly-trad">
+              <img src="images/layanan/speedometer.png" alt="">
+              <h6 class=" card-text">Eksekusi order mulai dari 0.1 detik</h6>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="content-ly-trad">
+              <img src="images/layanan/line-chart.png" alt="">
+              <h6 class=" card-text">Analisa pasar gratis</h6>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="content-ly-trad">
+              <img src="images/layanan/gold-ingots.png" alt="">
+              <h6 class=" card-text">150+ instrumen perdagangan</h6>
+            </div>
+          </div>
+          <div class="row content-ly2">
+            <div class="col-md-2">
+              <div class="content-ly-trad">
+                <img src="images/layanan/chat.png" alt="">
+                <h6 class=" card-text">Bantuan langsung 24/5</h6>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="content-ly-trad">
+                <img src="images/layanan/discount.png" alt="">
+                <h6 class=" card-text">Bonus deposit 100%</h6>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="content-ly-trad">
+                <img src="images/layanan/webinar.png" alt="">
+                <h6 class=" card-text">Webinar & seminar</h6>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="content-ly-trad">
+                <img src="images/layanan/swap.png" alt="">
+                <h6 class=" card-text">Akun Free-Swaps</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="section media-trading">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Pilih akun yang paling tepat untuk Anda</h2>
+              <h4 class="text-muted text-center text-header">Forex4you memberikan pengalaman trading terbaik. Dapatkan
+                akses
+                ke akun trading online yang memberikan kondisi trading terbaik di industri ini.</h4>
+              <p class="text-muted text-center mt-4">Perlu bantuan untuk memilih akun terbaik untuk Anda ?
+                Hubungi kami melalui <a href="">Live Chat</a> atau <a href="">Telepon melalui situs</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <table class="table tb-media table-bordered table-striped table-light">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col mt-2">
+                  <h3>
+                    <%= Akun1 %>
+                  </h3>
+                  <p class="text-light">Akun</p>
+                </th>
+                <th scope="col mt-2">
+                  <h3>
+                    <%= Akun2 %>
+                  </h3>
+                  <p class="text-light">Akun</p>
+                </th>
+                <th scope="col mt-2">
+                  <h3>
+                    <%= Akun3 %>
+                  </h3>
+                  <p class="text-light">Akun</p>
+                </th>
+                <th scope="col mt-2">
+                  <h3>
+                    <%= Akun4 %>
+                  </h3>
+                  <p class="text-light">Akun</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mt-4">
+                  <% dataCent.forEach(cent=> { %>
+                    <h5>
+                      <%= cent.instan %>
+                    </h5>
+                    <p class="text-muted">
+                      <%= cent.detail_instan %>
+                    </p>
+                    <% }) %>
+                      <a class="btn btn-success mt-4 btn-block" style="padding-top: 10px;" href="#">Daftar Akun</a>
+                </td>
+                <td class="mt-4">
+                  <% dataClassic.forEach(classic=> { %>
+                    <h5>
+                      <%= classic.instan %>
+                    </h5>
+                    <p class="text-muted">
+                      <%= classic.detail_instan %>
+                    </p>
+                    <% }) %>
+                      <a class="btn btn-success mt-4 btn-block" href="#">Daftar Akun</a>
+                </td>
+                <td class="mt-4">
+                  <% dataProCent.forEach(procent=> { %>
+                    <h5>
+                      <%= procent.instan %>
+                    </h5>
+                    <p class="text-muted">
+                      <%= procent.detail_instan %>
+                    </p>
+                    <% }) %>
+                      <a class="btn btn-success btn-block" href="#" style="margin-top: -5px;">Daftar Akun</a>
+                </td>
+                <td class="mt-4">
+                  <% dataProSTP.forEach(prostp=> { %>
+                    <h5>
+                      <%= prostp.instan %>
+                    </h5>
+                    <p class="text-muted">
+                      <%= prostp.detail_instan %>
+                    </p>
+                    <% }) %>
+                      <a class="btn btn-success btn-block" href="#" style="margin-top: -5px;">Daftar Akun</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="section contact" data-section="section6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Let’s Keep In Touch</h2>
+            </div>
+          </div>
+          <% include ('layout/google_map.ejs') %>
+        </div>
+      </div>
+
+
+      <%- include('layout/auth_footer.ejs') %>

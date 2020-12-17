@@ -1,0 +1,122 @@
+<%- include('layout/auth_header.ejs') %>
+
+  <%- include('layout/auth_topbar.ejs') %>
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <section class="section main-banner" id="top" data-section="section1">
+      <div class="img-banner">
+        <img src="images/Top_leader.mp4" alt="">
+      </div>
+
+      <div class="banner-overlay header-text banner-copy">
+        <div class="caption2">
+          <div class="row">
+            <div class="col-lg-5 ">
+              <small class="text-uppercase text-muted pl-4" style="font-weight: 800;">INVESTASI</small>
+              <h2 class="mt-2">Gunakan pengetahuan para ahli dalam mengembangkan dana Anda</h2>
+              <h4 class="mt-5">Layanan Forex4you dapat membantu Anda untuk mulai berinvestasi besar atau kecil,
+                mendapatkan
+                keuntungan yang lebih besar serta mengerti mengenai trading Forex..</h4>
+            </div>
+          </div>
+          <div class="main-button mt-5">
+            <div class="scroll-to-section tn"><a class="btn btn-success text-light" href="">Buat Akun</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- Invasting Section  1 -->
+    <section class="section investing-first">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card  card-share" style="width: 30rem;">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body">
+                <h5 class="card-title">Copy trading berarti menyalin trading dari trader yang lebih berpengalaman</h5>
+                <p class="card-text">Gunakan layanan copy trading dari Share4you dan tidak perlu bersusah payah untuk
+                  mempelajari trading Forex untuk menghasilkan keuntungan Anda. Layanan ini membantu Anda untuk meniru
+                  aktivitas trading dari para trader berpengalaman (kami menyebutnya leader) secara otomatis dan meraih
+                  keuntungan. Anda tinggal membayar komisi leader yang Anda ikuti.</p>
+              </div>
+            </div>
+          </div>
+          <!-- //============================ Table Leader =============================== -->
+          <div class="col">
+            <table class="table card-leader table-borderless">
+              <thead class="thead-dark ">
+                <th colspan="4">
+                  <h6 class="text-light">Daftar leader Share4you</h6>
+                </th>
+                <tr>
+                  <th scope="col" class="text-muted"><img src="#" alt=""></th>
+                  <th scope="col" class="text-muted"><small>Leader</small></th>
+                  <th scope="col" class="text-muted"><small>Pendapatan</small></th>
+                  <th scope="col" class="text-muted"><small>Pengikut</small></th>
+                </tr>
+              </thead>
+              <tbody class="table-secondary">
+                <% for( let i=0; i < DataLeader.length; i++ ) { %>
+                  <tr>
+                    <td><img src="<%= 'images/akun/' + DataLeader[i].image %>" alt="#all_trading"
+                        class="img img-thumbnail rounded-circle" style="width: 50px; height: 50px;"></td>
+                    <td>
+                      <%= DataLeader[i].name %>
+                    </td>
+                    <td>
+                      <%= DataLeader[i].pendapatan %>
+                    </td>
+                    <td>
+                      <%= DataLeader[i].pengikut %>
+                    </td>
+                  </tr>
+                  <% } %>
+              </tbody>
+              <tfoot class="table-dark">
+                <tr>
+                  <td colspan="4"><a href="/traders_user"
+                      class="btn btn-success btn-block text-uppercase  mx-auto">semua
+                      leader</a>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <!-- //============================ End Table Leader =============================== -->
+          <!-- //============================ Card =============================== -->
+          <div class="col-md-6">
+            <div class="card bg-success  share-card" style="width: 25rem; height: 18rem; margin-top: -20px;">
+              <div class="card-body">
+                <h5 class="card-title">Temukan cara cerdas berinvestasi di pasar finansial dengan Share4you!</h5>
+                <p class="card-text">Kurangi resiko investasi dengan menyalin trading dari beberapa trader sekaligus.
+                </p>
+                <a href="#" class="btn btn btn-light text-success">Lebih Lanjut Tentang Share4you</a>
+              </div>
+            </div>
+          </div>
+          <!-- //============================ End Card =============================== -->
+        </div>
+      </div>
+    </section>
+    <!-- End Invasting Section  1 -->
+
+
+
+
+    <!-- Google Maps -->
+    <section class="section contact" data-section="section6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Let’s Keep In Touch</h2>
+            </div>
+          </div>
+          <% include ('layout/google_map.ejs') %>
+        </div>
+      </div>
+
+
+      <%- include('layout/auth_footer.ejs') %>

@@ -1,0 +1,47 @@
+{
+  "name": "forexforyou",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.5",
+    "express": "^4.16.4",
+    "express-session": "^1.17.1",
+    "http-errors": "^1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5",
+    "node-xml-stream": "^1.0.2",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "pm2": "^4.5.0",
+    "sequelize": "^6.3.5",
+    "sitemap": "^6.3.3",
+    "stream": "0.0.2",
+    "zlib": "^1.0.5"
+  },
+  "description": "forexforyouid",
+  "main": ".eslintrc.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spectrevuln-sketch/forexforyouid_comprof.git"
+  },
+  "keywords": [
+    "forex"
+  ],
+  "author": "gerry raditya kusmana yahya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Spectrevuln-sketch/forexforyouid_comprof/issues"
+  },
+  "homepage": "https://github.com/Spectrevuln-sketch/forexforyouid_comprof#readme"
+}

@@ -1,0 +1,320 @@
+<%- include('layout/auth_header.ejs') %>
+
+  <%- include('layout/auth_topbar.ejs') %>
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <section class="section main-banner" id="top" data-section="section1">
+      <div class="img-banner">
+        <img src="images/trading/trading-hero.jpg" alt="">
+      </div>
+
+      <div class="banner-overlay header-text banner-trading">
+        <div class="caption2">
+          <div class="row">
+            <div class="col-lg-5 ">
+              <small class="text-uppercase text-muted pl-4" style="font-weight: 800;">trading</small>
+              <h2 class="mt-2">Spread terbaik, dengan teknologi dan kelengkapan terkini</h2>
+              <h4 class="mt-5">Semua yang Anda butuhkan dari broker Anda dapat ditemukan di Forex4you. Berbagai jenis
+                akun
+                yang sesuai
+                dan
+                tepat dengan lebih dari 150+ instrumen yang dapat Anda gunakan untuk melakukan trading Forex, indeks,
+                komoditas,
+                saham dan mata uang kripto.</h4>
+            </div>
+          </div>
+          <div class="main-button mt-5">
+            <div class="scroll-to-section tn"><a class="btn btn-success" href="#">Buat Akun</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!--  -->
+
+
+
+
+
+
+    <section class="section layanan">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="content-ly-trad">
+              <img src="images/layanan/justice-scale.png" alt="">
+              <h6 class=" card-text">Leverage hingga 1:2000.</h6>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="content-ly-trad">
+              <img src="images/layanan/arrows.png" alt="">
+              <h6 class=" card-text">Spread ketat</h6>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="content-ly-trad">
+              <img src="images/layanan/file.png" alt="">
+              <h6 class=" card-text">Layanan Copy Trade</h6>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="content-ly-trad">
+              <img src="images/layanan/speedometer.png" alt="">
+              <h6 class=" card-text">Eksekusi order mulai dari 0.1 detik</h6>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="content-ly-trad">
+              <img src="images/layanan/line-chart.png" alt="">
+              <h6 class=" card-text">Analisa pasar gratis</h6>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="content-ly-trad">
+              <img src="images/layanan/gold-ingots.png" alt="">
+              <h6 class=" card-text">150+ instrumen perdagangan</h6>
+            </div>
+          </div>
+          <div class="row content-ly2">
+            <div class="col-md-2">
+              <div class="content-ly-trad">
+                <img src="images/layanan/chat.png" alt="">
+                <h6 class=" card-text">Bantuan langsung 24/5</h6>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="content-ly-trad">
+                <img src="images/layanan/discount.png" alt="">
+                <h6 class=" card-text">Bonus deposit 100%</h6>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="content-ly-trad">
+                <img src="images/layanan/webinar.png" alt="">
+                <h6 class=" card-text">Webinar & seminar</h6>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="content-ly-trad">
+                <img src="images/layanan/swap.png" alt="">
+                <h6 class=" card-text">Akun Free-Swaps</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="section media-trading">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Pilih akun yang paling tepat untuk Anda</h2>
+              <h4 class="text-muted text-center text-header">Forex4you memberikan pengalaman trading terbaik. Dapatkan
+                akses
+                ke akun trading online yang memberikan kondisi trading terbaik di industri ini.</h4>
+              <p class="text-muted text-center mt-4">Perlu bantuan untuk memilih akun terbaik untuk Anda ?
+                Hubungi kami melalui <a href="">Live Chat</a> atau <a href="">Telepon melalui situs</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <table class="table tb-media table-bordered table-striped table-light">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col mt-2">
+                  <h3>
+                    <%= Akun1 %>
+                  </h3>
+                  <p class="text-light">Akun</p>
+                </th>
+                <th scope="col mt-2">
+                  <h3>
+                    <%= Akun2 %>
+                  </h3>
+                  <p class="text-light">Akun</p>
+                </th>
+                <th scope="col mt-2">
+                  <h3>
+                    <%= Akun3 %>
+                  </h3>
+                  <p class="text-light">Akun</p>
+                </th>
+                <th scope="col mt-2">
+                  <h3>
+                    <%= Akun4 %>
+                  </h3>
+                  <p class="text-light">Akun</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mt-4">
+                  <% dataCent.forEach(cent=> { %>
+                    <h5>
+                      <%= cent.instan %>
+                    </h5>
+                    <p class="text-muted">
+                      <%= cent.detail_instan %>
+                    </p>
+                    <% }) %>
+                      <a class="btn btn-success mt-4 btn-block" style="padding-top: 10px;" href="#">Daftar Akun</a>
+                </td>
+                <td class="mt-4">
+                  <% dataClassic.forEach(classic=> { %>
+                    <h5>
+                      <%= classic.instan %>
+                    </h5>
+                    <p class="text-muted">
+                      <%= classic.detail_instan %>
+                    </p>
+                    <% }) %>
+                      <a class="btn btn-success mt-4 btn-block" href="#">Daftar Akun</a>
+                </td>
+                <td class="mt-4">
+                  <% dataProCent.forEach(procent=> { %>
+                    <h5>
+                      <%= procent.instan %>
+                    </h5>
+                    <p class="text-muted">
+                      <%= procent.detail_instan %>
+                    </p>
+                    <% }) %>
+                      <a class="btn btn-success btn-block" href="#" style="margin-top: -5px;">Daftar Akun</a>
+                </td>
+                <td class="mt-4">
+                  <% dataProSTP.forEach(prostp=> { %>
+                    <h5>
+                      <%= prostp.instan %>
+                    </h5>
+                    <p class="text-muted">
+                      <%= prostp.detail_instan %>
+                    </p>
+                    <% }) %>
+                      <a class="btn btn-success btn-block" href="#" style="margin-top: -5px;">Daftar Akun</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section card-trading">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card no-card mt-5">
+              <img src="images/trading/device.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Trade melalui MT4 atau Platform Forex4you</h5>
+                <p class="card-text text-muted">Anda dapat memilih MT4 atau desktop Forex4you, mobile, platform
+                  Webtrader
+                  untuk
+                  melakukan trading. Teknologi Mobile app milik kami dapat membantu Anda untuk melakukan penyimpanan
+                  maupun
+                  penarikan dana Anda, melakukan verifikasi profil Anda dan lainnya.</p>
+                <a class="card-text" href="#">
+                  <p>Platform trading <span>></span></p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card no-card mt-5">
+              <img src="images/trading/foreground.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Modal besar atau memulai dengan modal kecil</h5>
+                <p class="card-text text-muted">Anda dapat mendaftarkan akun Cent untuk melakukan trading dalam Cent.
+                  Pilihan ideal untuk pemula yang ingin mencoba layanan atau trading dengan lot mikro. Daftarkan akun
+                  Classic jika Anda telah yakin dan berpengalaman dalam trading.</p>
+                <a class="card-text" href="#">
+                  <p>
+                    Yang perlu diketahui mengenai akun Cents <span>></span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card no-card mt-5">
+              <img src="images/trading/treasure.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Hasilkan pendapatan tambahan hingga 8 USD per lot dengan Share4you</h5>
+                <p class="card-text text-muted">Mendaftar atau mengubah akun trading Forex4you Anda menjadi akun leader
+                  di
+                  Share4you, lakukan trading dan Anda akan menerima komisi untuk setiap order yang diikuti oleh trader
+                  lain.
+                  Tentukan jumlah komisi yang ingin Anda terima untuk setiap lot yang diikuti oleh trader lain dan
+                  informasikan jumlah yang ingin Anda bagi kepada partner agar mereka termotivasi dan mempromosikan
+                  Anda.
+                </p>
+                <a class="card-text" href="#">
+                  <p>Ketahui lebih lanjut <span>></span></p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card do-card">
+              <div class="card-header bg-transparent border-dark" style="font-weight: 700;">Menghitung pendapatan dan
+                penghargaan Anda sebagai leader
+              </div>
+              <div class="card-body">
+                <div class="card-title text-center">
+                  <a href="#" class="btn btn-success text-uppercase btn-lg">komisi</a>
+                  <a href="#" class="btn btn-success text-uppercase btn-lg">percentages</a>
+                </div>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#" class="btn btn-outline-success  text-uppercase">daftar menjadi leader</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="section exekusi">
+      <div class="container">
+        <div class="row">
+          <div class="content-exekusi text-center">
+            <img src="images/trading/flash.png" alt="">
+            <h3>Eksekusi kilat dan spread rendah.</h3>
+            <p class="text-muted">Agar trading Anda tetap kompetitif setiap saat, kami menawarkan MarketPlace - piranti
+              untuk memantau likuiditas aggregator dan eksekusi order. Kini eksekusi order menjadi lebih cepat, lebih
+              stabil
+              dan lebih aman.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section contact" data-section="section6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Let’s Keep In Touch</h2>
+            </div>
+          </div>
+          <% include ('layout/google_map.ejs') %>
+        </div>
+      </div>
+
+
+      <%- include('layout/auth_footer.ejs') %>

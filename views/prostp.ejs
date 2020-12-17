@@ -1,0 +1,197 @@
+<%- include('layout/auth_header.ejs') %>
+
+<%- include('layout/auth_topbar.ejs') %>
+
+<!-- ***** Main Banner Area Start ***** -->
+<section class="section main-banner" id="top" data-section="section1">
+  <div class="img-banner">
+    <img src="images/akun/cent/cent-account-type-hero.jpg" alt="">
+  </div>
+
+  <div class="banner-overlay header-text banner-copy">
+    <div class="caption2">
+      <div class="row">
+        <div class="col-md-6 ">
+          <small class="text-uppercase text-muted pl-4" style="font-weight: 800;">DAFTAR AKUN PRO STP</small>
+          <h2 class="mt-2 text-left font-weight-bold">Garansi harga pasar terbaik dari interbank</h2>
+          <h4 class="mt-5 text-left">Dapatkan kebebasan trading dengan floating spread mulai dari 0.1 pips, trading
+            dengan hanya satu kali klik dan level 2 harga kedalaman pasar yang nyata . Akun ini memiliki eksekusi pasar
+            tanpa requotes. Bitcoins tersedia untuk trading.</h4>
+        </div>
+      </div>
+      <a class="btn btn-success text-light text-sm-center"
+        href="https://account.forex4uid.com/id/user-registration/classic_ndd/">DAFTAR AKUN PRO STP</a>
+    </div>
+  </div>
+</section>
+<!-- ***** Main Banner Area End ***** -->
+
+<!-- //=============================================== Contain Fist ========================================= -->
+<section class="section investing-col-bg2 content-first">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="icon-inv">
+          <div class="card" style="width: 10rem;">
+            <div class="content-icon">
+              <img src="images/layanan/gold-ingots.png" class="card-img-top" alt="#instrumen-terbesar">
+              <div class="card-body">
+                <p class="card-text">Lebih dari 120 instrumen</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon-inv">
+          <div class="card" style="width: 10rem;">
+            <div class="content-icon">
+              <img src="images/layanan/line-chart.png" class="card-img-top" alt="#floating-Spread">
+              <div class="card-body">
+                <p class="card-text">Floating spread mulai dari 0.1 pip</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon-inv">
+          <div class="card" style="width: 10rem;">
+            <div class="content-icon">
+              <img src="images/layanan/arrows.png" class="card-img-top" alt="#tanpa_Quote Quote">
+              <div class="card-body">
+                <p class="card-text">Tanpa requotes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon-inv">
+          <div class="card" style="width: 10rem;">
+            <div class="content-icon">
+              <img src="images/layanan/line-chart.png" class="card-img-top" alt="#Pasar_Trading Pasar">
+              <div class="card-body">
+                <p class="card-text">Leverage hingga 1:2000 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon-inv">
+          <div class="card" style="width: 10rem;">
+            <div class="content-icon">
+              <img src="images/trading/flash.png" class="card-img-top" alt="#Pasar_Eksekusi">
+              <div class="card-body">
+                <p class="card-text">Eksekusi pasar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon-inv">
+          <div class="card" style="width: 10rem;">
+            <div class="content-icon">
+              <img src="images/layanan/bitcoin.png" class="card-img-top" alt="#BitCoin Trading_Matauang">
+              <div class="card-body">
+                <p class="card-text">Trading mata uang kripto</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- //=============================================== End Contain Fist ========================================= -->
+
+<!-- //============================ table akun =============================== -->
+<section class="section media-trading">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2>Akun Cents</h2>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <table class="table tb-media table-bordered table-striped table-light">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col mt-2">
+              <h3>Akun <%= Akun4 %> </h3>
+              <p class="text-light">Memiliki trading instrumen sebagai berikut : 40+ pasangan mata uang, 2 komoditas dan
+                35 saham</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mt-4">
+              <% dataProstp.forEach(prostp => { %>
+              <h5><%= prostp.instan %> </h5>
+              <p class="text-muted"><%= prostp.detail_instan %> </p>
+              <% }) %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a class="text-light font-weight-bold" style="padding-top: 10px; margin: auto !important;" href="#">Pahami Syarat
+        Akun
+        Trading
+        lainnya ></a>
+    </div>
+  </div>
+</section>
+<!-- //============================ end table akun =============================== -->
+
+
+
+<!-- //=============================================== berita card ========================================= -->
+<section class="section investing-col-bg2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card mt-4" style="width: 25rem; border: none; background: none;">
+          <img src="images/layanan/customer.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-light mb-2 " style="font-weight: 800; font-size: 15px;">Akun Pro STP cocok untuk
+
+            </h5>
+            <h6 class="card-subtitle mb-4 text-light" style="position: relative;"><img src="images/icons/check.png"
+                class="mr-2">Trader dengan volume besar
+            </h6>
+            <h6 class="card-subtitle mb-4 text-light" style="position: relative;"><img src="images/icons/check.png"
+                class="mr-2">Trader yang mencoba strategi scalping </h6>
+            <h6 class="card-subtitle mb-4 text-light" style="position: relative;"><img src="images/icons/check.png"
+                class="mr-2">Trader yang menggunakan EA/Robot trading </h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card mt-4" style="width: 25rem; border: none; background: none;">
+          <img src="images/trading/treasure.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-light mb-2" style="font-weight: 800; font-size: 15px; ">Mempermudah membuat
+              keputusan trading
+            </h5>
+            <h6 class="card-subtitle mb-4 text-light" style="position: relative;"><img src="images/icons/check.png"
+                class="mr-2">Dengan bantuan analisa gratis (Dow Jones, Trading Central, Autochartist), eksekusi harga
+              instan dan harga pasar, tanpa requotes atau penolakan eksekusi harga terhadap pasar, spread ketat dan
+              penggunaan EA/robot trading serta strategi apapun yang dimiliki merupakan kebebasan mutlak Anda dalam
+              trading. </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- //=============================================== End berita card ========================================= -->
+
+<%- include('layout/auth_footer.ejs') %>
