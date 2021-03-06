@@ -5,26 +5,28 @@
       <div class="col">
         <div class="logo">
           <div class="box-logo">
-            <a href="#"><img src="images/logo.png" alt=""> </a>
+            <a href="#"><img src="/images/logo.png" alt=""> </a>
           </div>
           <div class="footer-social">
-            <p>Ikuti kami di sosial media</p>
-            <div class="footer-icon ml-5">
-              <a href="https://wa.link/lbvclu"><img style="width: 30px; height: 30px; " src="images/icons/whatsapp.png"
+            <p class="text-light mt-4">Ikuti kami di sosial media</p>
+            <div class="footer-icon ml-4" style="margin-top: -20px;">
+              <a href="https://wa.link/lbvclu"><img style="width: 30px; height: 30px; " src="/images/icons/whatsapp.png"
                   alt=""></a>
               <a href="https://t.me/Tradingforex4you"><img style="width: 30px; height: 30px; margin-left: 7px;"
-                  src="images/icons/telegram.png" alt=""></a>
+                  src="/images/icons/telegram.png" alt=""></a>
               <a href="https://msng.link/o/?tradingforex4u=ig"><img style="width: 30px; height: 30px; margin-left: 7px;"
-                  src="images/icons/instagram.png" alt=""></a>
+                  src="/images/icons/instagram.png" alt=""></a>
             </div>
           </div>
-          <div class="footer-social mt-4">
-            <p>Dukungan 24/5</p>
-            <a href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill"
-                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <div class="footer-social">
+            <p class="text-light mt-4">Dukungan 24/5</p>
+            <a class="d-inline" href="#" style="margin-top:-15px;"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                   d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
-              </svg> 0078033212324</a>
+              </svg>
+              <h5 class="d-inline">+6281-9325-53119</h5>
+            </a>
           </div>
         </div>
       </div>
@@ -51,9 +53,9 @@
       <div class="col" style="margin-top: 35px;">
         <div class="footer-social">
           <ul>
-            <li><a href="#"><img src="images/payment/google-play.png" alt=""></a></li>
+            <li><a href="#"><img src="/images/payment/google-play.png" alt=""></a></li>
             <li class="mb-4"><a href="#"><img style="width: 170px; height: 60px; padding-left: 8px;"
-                  src="images/payment/app-store.png" alt=""></a>
+                  src="/images/payment/app-store.png" alt=""></a>
             </li>
           </ul>
         </div>
@@ -117,30 +119,62 @@
         <p><i class="fa fa-copyright"></i> Copyright
           <script
             type='text/javascript'>var creditsyear = new Date(); document.write(creditsyear.getFullYear());</script>
-          </a>. The Next Inovation All rights reserved.
+          </a>. StoryMade Indonesia.
       </div>
     </div>
   </div>
 </footer>
+</my-component>
 <!-- //===============================================  ========================================= -->
 <!-- Scripts -->
+
+
+
+
 <!-- Bootstrap core JavaScript -->
 
-< <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"></script>
+<!-- Slick JS -->
+<script src="/javascripts/slick.js"></script>
+<script>
+  $('#mentor_forex_1').on('click', function () {
+    $('.modal-header .modal-title').html("Silahkan Daftar Terlebih Dahulu");
+    $('.modal-body button[type=submit]').addClass('btn btn-success');
+    $('.modal-body button[type=submit]').html('daftar');
+    $('.modal-body form').attr('action', '/daftar_mentoring');
+    $('button[type=button]').attr('hidden', true)
+  })
+
+  $('#mentor_forex_2').on('click', function () {
+    var id = $(this).data('id');
+    $('.modal-header .modal-title').html("Silahkan Daftar Terlebih Dahulu");
+    $('.modal-body button[type=submit]').addClass('btn btn-success');
+    $('.modal-body button[type=submit]').html('daftar');
+    $('.modal-body form').attr('action', '/daftar_mentoring_secondary');
+    $('button[type=button]').attr('hidden', true)
+  })
 
 
-  <script src="javascripts/isotope.min.js"></script>
-  <script src="javascripts/owl-carousel.js"></script>
-  <script src="javascripts/lightbox.js"></script>
-  <script src="javascripts/tabs.js"></script>
-  <script src="javascripts/video.js"></script>
-  <script src="javascripts/slick-slider.js"></script>
-  <script src="javascripts/custom.js"></script>
-  </body>
+  $('.slick-dots').attr("style", "color:white; margin-top:;");
+</script>
 
-  </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<script src="javascripts/isotope.min.js"></script>
+<script src="javascripts/owl-carousel.js"></script>
+<script src="javascripts/lightbox.js"></script>
+<script src="javascripts/tabs.js"></script>
+<script src="javascripts/video.js"></script>
+<script src="javascripts/slick-slider.js"></script>
+<script src="javascripts/custom.js"></script>
+
+
+
+
+
+</body>
+
+</html>

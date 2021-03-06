@@ -1,0 +1,88 @@
+<%- include('layout/auth_header.ejs') %>
+
+  <%- include('layout/auth_topbar.ejs') %>
+
+    <% if (getMentor.slug==='johan_hartono' ) { %>
+
+
+
+      <section class="section investing-col-bg">
+        <div class="container text-light">
+          <div class="row">
+            <div class="how-analisa">
+              <div class="col-lg-10">
+                <h3 class="text-left text-uppercase font-weight-bold">JOHAN HARTONO</h3>
+                <p class="text-light">Professional trader for 10 years <br>
+                  Free educate how to money management <br>
+                  <span class="text-danger">All partners will get 5% profit sharing for those who recommend</span>
+                </p>
+                <br>
+                <div class="col-lg-6" style="margin: -3em 0 0 0;">
+                  <h3 class="text-left mt-5 font-weight-bold">1. GTI-GTI Scalpers</h3>
+                  <a class="font-weight-normal"
+                    href="https://copy.forex4uid.com/id/leaders#/7697178/overview">https://copy.forex4uid.com/id/leaders#/7697178/overview</a>
+                  <p class="text-light">Total Gain: +58.49% <br>
+                    January Weekly Gain: +3.96%<br>
+                    Risk: Low<br>
+                    Min Invest: $25<br>
+                  </p>
+                  <br>
+
+                  <h3 class="text-left mt-5 font-weight-bold">2. GTI-GTI Locking System</h3>
+                  <a class="font-weight-normal"
+                    href="https://copy.forex4uid.com/id/leaders#/7726127/overview">https://copy.forex4uid.com/id/leaders#/7726127/overview</a>
+                  <p class="text-light">Total Gain: +20.85% <br>
+                    January Weekly Gain: +0.79%<br>
+                    Risk: Low<br>
+                    Min Invest: $35<br>
+                  </p>
+                  <br>
+                  <h3 class="text-left mt-5 font-weight-bold">3. TheKaysFX Global Prime</h3>
+                  <a class="font-weight-normal"
+                    href="https://copy.forex4uid.com/id/leaders#/7712918/overview">https://copy.forex4uid.com/id/leaders#/7712918/overview</a>
+                  <p class="text-light">Total Gain: +33.56% <br>
+                    January Weekly Gain: +2.07%<br>
+                    Risk: Medium<br>
+                    Min Invest: $100<br>
+                  </p>
+                  <br>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <% }else if (getMentor.slug==='rendy_goc' ) { %>
+        <section class="section investing-col-bg">
+          <div class="container text-light">
+            <div class="row">
+              <div class="how-analisa">
+                <div class="col-lg-10">
+                  <h3 class="text-left text-uppercase font-weight-bold">RENDY GOC</h3>
+                  <p class="text-light">Professional trader for 8 years <br>
+                    Free educate how to money management <br>
+                    XAUUSD transactions only <br>
+                    <span class="text-danger">All partners will get 10% profit sharing for those who recommend</span>
+                  </p>
+                  <br>
+                </div>
+                <div class="col-lg-6" style="margin: -3em 0 0 0;">
+                  <h3 class="text-left mt-5 font-weight-bold">1. GOC Auto Trading</h3>
+                  <a class="font-weight-normal"
+                    href="https://copy.forex4uid.com/id/leaders#/7675737/overview">https://copy.forex4uid.com/id/leaders#/7675737/overview</a>
+                  <p class="text-light">Total Gain: +26.47 <br>
+                    January Weekly Gain: +1.6%<br>
+                    Risk: Low<br>
+                    Min Invest: $108<br>
+                  </p>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <% }else{console.error(err); process.exit(1);} %>
+
+
+          <%- include('layout/auth_footer.ejs') %>

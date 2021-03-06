@@ -4,7 +4,7 @@ var IndexControllers = require('../controllers/indexController');
 
 
 /* GET home page. */
-router.get('/', IndexControllers.viewIndex);
+router.get('/', IndexControllers.validate('customer_pengajuan'), IndexControllers.viewIndex);
 
 //============================ Trading View ===============================
 router.get('/trading', IndexControllers.viewtrading);
@@ -37,10 +37,18 @@ router.get('/prostp_akun', IndexControllers.viewProstp);
 router.get('/compare-accounts', IndexControllers.viewCompareAkun);
 
 
-router.get('/sitemap.xml', function (req, res) {
-  res.header('Content-type: application/xml');
-  res.send('sitemap.xml');
-})
+//============================ View Mentoring ===============================
+router.get('/mentor_trading/:slug', IndexControllers.viewMentoring);
+
+//============================ Prosess Daftar Mentoring ===============================
+router.post('/daftar_mentoring', IndexControllers.validate('customer_pengajuan'), IndexControllers.processDataMentoring)
+//============================ Prosess Daftar Mentoring Secondary ===============================
+router.post('/daftar_mentoring_secondary', IndexControllers.validate('customer_pengajuan'), IndexControllers.processDataMentoringSecondary)
+
+//============================ Pengajuan Promo ===============================
+router.post('/pengajuan_promo', IndexControllers.validate('customer_pengajuan'), IndexControllers.processPenganjuan)
+
+router.get('/sitemap.xml', IndexControllers.sitemap);
 
 module.exports = router;
 
